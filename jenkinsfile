@@ -8,7 +8,7 @@ pipeline {
         stage('Cleaning previous containers') {
             steps {
                 sh '''
-                  docker backend_run || true
+                  docker stop backend_run || true
                   docker stop frontend_run || true
                   docker container prune -f
                '''

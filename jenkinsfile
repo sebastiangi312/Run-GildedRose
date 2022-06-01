@@ -29,5 +29,11 @@ pipeline {
                 sh 'docker-compose up -d'
             }
         }
+
+        stage("Initializing APP"){
+            steps{
+                sleep(time:45,unit:"SECONDS")
+            }
+        }
     }
 }

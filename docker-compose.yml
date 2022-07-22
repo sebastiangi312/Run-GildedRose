@@ -25,5 +25,5 @@ services:
     image: postgres
     ports:
       - 5432:5432
-    enviroment:
+    environment:
       - POSTGRES_PASSWORD=secret
